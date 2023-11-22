@@ -136,3 +136,41 @@ h3 {
 }
 
 
+.ballen {
+    width: 70%;
+    margin: 8rem auto;
+    height: 1000px;
+}
+
+.bal {
+    background: #f54040;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 300px;
+    margin-top: 50px;
+
+    /*animation-name: changeColor;*/
+    /*animation-duration: 2s;*/
+    /*animation-iteration-count: infinite;*/
+
+    animation-name: balVal;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes balVal  {
+    0% {
+        margin-top: 50px;
+        animation-timing-function: cubic-bezier(0.64, 0, 0.78, 0);
+    }
+    50% {
+        margin-top: 600px;
+        animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    100% {
+        margin-top: 50px;
+    }
+}
+
